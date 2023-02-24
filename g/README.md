@@ -1,0 +1,3 @@
+Since `0 <= U,D <= 2000`, we can precompute the number of ways to hold a practice session with `U` up-jumps and `D` down-jumps for all `0 <= U,D <= 2000`. Then, we can create an inverse mapping from numbers `n` to pairs `(U, D)` such that the number of ways to hold a practice session with `U` up-jumps and `D` down-jumps is `n`. Finally, to answer every query, we simply get `U` and `D` from our inverse mapping for every query, or we print `-1` if the query is not found in the inverse mapping.
+
+Notably, the hint for this problem comes from [Bertrand's ballot theorem](https://en.wikipedia.org/wiki/Bertrand%27s_ballot_theorem), and the formula presented in the hint is explained in the "Variant: ties allowed" section of the Wikipedia article.

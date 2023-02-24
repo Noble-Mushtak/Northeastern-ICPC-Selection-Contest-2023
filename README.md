@@ -1,0 +1,5 @@
+# Northeastern ICPC Selection Contest 2023
+
+This repository holds solutions to the problems in the Northeastern ICPC Selection Contest 2023, which was used to choose the most qualified students for Northeastern's ACM-ICPC teams. You can view the problems [by joining the contest using this invite link](https://codeforces.com/contestInvitation/4f92d75d4c884ac61fd7d89a9f6f735f64e87e45). All problems in the contest and solutions in this repository were written by Noble Mushtak.
+
+The directory containing the solutions for each problem is named after the problem letter, e.g. the solutions to Problem A are in the `a` directory and the solutions to Problem G are in the `g` directory. Each directory contains a `README.md` briefly explaining the intuition behind the solution, a `sol.cpp` file representing a C++ solution to the problem, a `Solution.java` file representing a Java solution to the problem, and a `sol.py` file representing a Pypy 3 solution to the problem.

@@ -1,0 +1,5 @@
+Since every student gets at least 1 sticker and every student gets one more sticker than the student with the next best score below them, the minimum number of stickers we need is `1+2+...+N=N*(N+1)/2`.
+
+Therefore, if `K < N*(N+1)/2`, we need to buy stickers. We want to buy as few stickers as possible, so we buy `N*(N+1)/2-K` stickers, and since buying one sticker costs `$1000000`, we simply multiply the number of stickers we buy by `1000000` to get the answer.
+
+If `K >= N*(N+1)/2`, then we have enough stickers. However, the number of stickers we hand out needs to be `Z+(Z+1)+...+(Z+N-1)=N*(N+1)/2+(Z-1)*N`, where `Z` is the number of stickers given to the worst-scoring student. Ergo, we can hand out any number of stickers which is congruent to `N*(N+1)/2` modulo `N`. This means we need to buy or throw away at most `N-1` stickers in order to have a valid number of stickers. Since `N-1 < 1000000` and buying one sticker costs `$1000000`, it is always optimal to throw away some stickers rather than buy stickers. Therefore, we throw away `(K - N*(N+1)/2) % N` stickers, so that the number of stickers left is congruent to `N*(N+1)/2` modulo `N`.
